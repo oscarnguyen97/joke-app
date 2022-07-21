@@ -1,16 +1,21 @@
 import React from "react"
 import Header from "Components/Header";
+import Body from "Components/Body/index";
+import Footer from "Components/Footer";
 import {
-  StyleScreen, 
-  WrapperHeader
-} from './App.styled'
+  StyleScreen,
+  WrapperBody
+} from './App.styled';
 
 const App = () => {
+
   return (
     <StyleScreen>
-      <WrapperHeader>
         <Header />
-      </WrapperHeader>
+      <WrapperBody>
+        <Body />
+      </WrapperBody>
+      <Footer />
     </StyleScreen>
   );
 }

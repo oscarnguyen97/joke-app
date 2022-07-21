@@ -1,23 +1,18 @@
 import {
-    HeaderScroll,
     HeaderTop,
-    Container,
     HeaderContent,
 } from './styled'
 import HeaderContentLeft from './Components/HeaderContentLeft'
+import HeaderContentRight from './Components/HeaderContentRight'
 
 const Header = () => {
     return (
-        <HeaderScroll>
-            <HeaderTop >
-                <Container>
-                    <HeaderContent>
-                        <HeaderContentLeft />
-                        {/* <HeaderContentRight /> */}
-                    </HeaderContent>
-                </Container>
-            </HeaderTop>
-        </HeaderScroll>
+        <HeaderTop >
+            <HeaderContent>
+                <HeaderContentLeft />
+                <HeaderContentRight />
+            </HeaderContent>
+        </HeaderTop>
     )
 }
 
